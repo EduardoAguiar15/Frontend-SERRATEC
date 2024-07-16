@@ -10,11 +10,6 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
-function toggleTema() {
-  let toggleTema = document.getElementById("header");
-  toggleTema.classList.toggle("light-mode");
-}
-
 function exibirReceita(numero) {
   document.getElementById("bloody-mary-input").style.color = "#ab9555";
   document.getElementById("bloody-mary-input").style.borderBottom = "";
@@ -53,14 +48,4 @@ function exibirReceita(numero) {
       `${drink.name.toLowerCase().replace(" ", "-")}-input`
     ).style.borderBottom = "1px solid #fdf9ea";
   }
-}
-
-function mudar() {
-  let header = document.getElementById("header");
-  let footer = document.getElementById("footer");
-  let destaque = document.getElementsByClassName("destaque");
-
-  header.classList.toggle("header-light");
-  footer.classList.toggle("footer-light");
-  destaque[0].classList.toggle("destaque-light");
 }
